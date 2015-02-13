@@ -1,2 +1,5 @@
 # vim-glsl
-some glsl syntax files for vim
+Some glsl useful files for vim.
+
+This includes:
+- glsl es 1.00 syntax file
