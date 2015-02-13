@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: GLSL ES 1.00
 " Maintainer: ZeDuckMaster <zeduckmaster@free.fr>
-" License: GPL v3.0
+" License: GPL
 " Latest Revision: 0.1
 "
 " This program is free software: you can redistribute it and/or modify
@@ -51,7 +51,6 @@ syn case ignore
 syn match glsles100Decimal		display "\<[1-9]\+\d*\>"
 syn match glsles100Octal		display "\<0[1-7]*\>"
 syn match glsles100Hexa			display "\<0[xX][0-9a-fA-F]\+\>"
-syn match glsles100Exp			display contained "\d[eE][+-]\=\d\+\>"
 syn match glsles100Float		display "\<\d\+\.\d*"
 syn match glsles100FloatExp		display "\<\d\+\.\d*[eE][+-]\=\d\+"
 syn match glsles100FloatOpt		display "\.\d\+\>"
