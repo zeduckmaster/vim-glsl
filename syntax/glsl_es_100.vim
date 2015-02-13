@@ -2,7 +2,7 @@
 " Language: GLSL ES 1.00
 " Maintainer: ZeDuckMaster <zeduckmaster@free.fr>
 " License: GPL
-" Latest Revision: 0.1
+" Latest Revision: 0.2
 "
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -28,6 +28,8 @@ syn match glsles100Operator		"[](){}+\-~!*/%<>=&|^[]"
 syn match glsles100PreProc		"#.*$"
 syn match glsles100CommentLine	"//.*$"
 syn match glsles100SpecialSwz	"\.[rgbaxyzw]\{2,4}\>"
+
+syn region glsles100Comment		start="/\*" end="\*/" fold
 
 syn keyword glsles100Macro		__LINE__ __FILE__ __VERSION__ GL_ES
 
@@ -66,6 +68,7 @@ hi def link glsles100FloatOpt		Number
 hi def link glsles100FloatOptExp	Number
 
 hi def link glsles100CommentLine	Comment
+hi def link glsles100Comment		Comment
 hi def link glsles100Operator		Operator
 hi def link glsles100Type			Type
 hi def link glsles100Keyword		Keyword
