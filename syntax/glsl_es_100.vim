@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: GLSL ES 1.00
 " Maintainer: ZeDuckMaster <zeduckmaster@free.fr>
-" License: GPL
+" License: GPL v3.0
 " Latest Revision: 0.1
 "
 " This program is free software: you can redistribute it and/or modify
@@ -17,12 +17,12 @@
 " You should have received a copy of the GNU General Public License
 " along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-"if !exists("main_syntax")
-"	if exists("b:current_syntax")
-"		finish
-"	endif
+if !exists("main_syntax")
+	if exists("b:current_syntax")
+		finish
+	endif
 	let main_syntax = 'glsl_es_100'
-"endif
+endif
 
 syn match glsles100Operator		"[](){}+\-~!*/%<>=&|^[]"
 syn match glsles100PreProc		"#.*$"
